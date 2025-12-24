@@ -1,2 +1,14 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+FUNCTION consecutiveSubstrings(inputString)
+    CREATE empty list called result
+
+    FOR each index i from 0 to length of inputString - 1
+        FOR each index j from i + 1 to length of inputString
+            substring ← characters of inputString from index i up to j
+            ADD substring to result
+        END FOR
+    END FOR
+
+    RETURN result
+END FUNCTION
